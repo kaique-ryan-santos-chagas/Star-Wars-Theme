@@ -1,7 +1,7 @@
 all: compile link 
 
 compile:
-	g++ -I src/include -c main.cpp
+	g++ -I src/include -c star-wars.cpp
 
 link:
-	g++ main.o -o main -L src/lib -l sfml-graphics -l sfml-window -l sfml-system 
+	g++ star-wars.o -o star-wars -L src/lib -l sfml-audio -l sfml-window -l sfml-system -l sfml-graphics
